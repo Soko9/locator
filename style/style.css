@@ -1,0 +1,184 @@
+* {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+	width: 100%;
+	height: 100vh;
+	font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.title {
+	font-size: 80px;
+	font-weight: bold;
+	font-family: 'Ubuntu', sans-serif;
+	position: absolute;
+	top: 40px;
+	left: 95px;
+	color: #BBBBBB;
+	text-transform: uppercase;
+	z-index: 100;
+	user-select: none;
+	opacity: 0.7;
+}
+
+.search-container {
+	width: 300px;
+	height: 50px;
+	z-index: 100;
+	position: absolute;
+	top: 140px;
+	left: 125px;
+	background-color: #BBBBBB;
+	border-radius: 20px;
+	display: flex;
+	opacity: 0.7;
+}
+
+.search {
+	display: flex;
+	flex-grow: 1;
+	align-items: center;
+	padding-left: 20px;
+}
+
+.search input {
+	width: 230px;
+	font-size: 24px;
+	background-color: transparent;
+	color: #4C57FC;
+	border: none;
+}
+
+.search input:focus {
+	outline: none;
+} 
+
+.search img {
+	width: 36px;
+	height: 36px;
+	border: 2px dotted #4C57FC;
+	border-radius: 20px;
+	padding: 5px;
+}
+
+.search img:hover {
+	cursor: crosshair;
+}
+
+.stores-list-container {
+	width: 264px;
+	z-index: 100;
+	background-color: #BBBBBB;
+	position: absolute;
+	border-radius: 20px;
+	opacity: 0.7;
+	top: 215px;
+	left: 132px;
+	bottom: 20px;
+	padding: 18px 0 18px 18px;
+	display: flex;
+	user-select: none;
+}
+
+.stores-list {
+	flex-grow: 1;
+	overflow-y: scroll;
+	scroll-behavior: smooth;
+}
+
+.stores-list::-webkit-scrollbar {
+  width: 18px;
+  height: 10px;
+}
+
+.stores-list::-webkit-scrollbar-track {
+  background-color: #BBBBBB;
+  opacity: 0.7;
+}
+
+.stores-list::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  background-color: #BBBBBB;
+}
+
+.store-container {
+	padding: 18px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #4C57FC;
+	cursor: pointer;
+}
+
+.store-container:hover {
+	transform: scale(1.15);
+	transition: all 700ms ease-out;
+	/*border-bottom: none;*/
+	/*border: 4px dotted #4C57FC;*/
+	/*border-radius: 15px;*/
+	/*margin-top: -2px;*/
+}
+
+/*.store-container:hover .store-address {
+	color: white;
+}
+
+.store-container:hover .store-phone-number {
+	color: #CCCCCC;
+}
+
+.store-container:hover .store-number {
+	background-color: #4C57FC;
+	color: white;
+	border: 2px dotted white;
+}*/
+
+.store-container-background {
+	display: flex;
+	align-items: center;
+	border-radius: 20px;
+}
+
+.store-info {
+	flex-grow: 1;
+}
+
+.store-address {
+	font-size: 14px;
+}
+
+.store-address span {
+	display: block;
+}
+
+.store-phone-number {
+	font-family: monospace;
+	font-size: 15px;
+	font-weight: 900;
+	color: #444444;
+	margin: 10px 0 10px 0;
+}
+
+.store-number {
+	width: 30px;
+	height: 30px;
+	font-family: monospace;
+	font-weight: bolder;
+	font-size: 24px;
+	display: flex;
+	border: 2px dotted #4C57FC;
+	border-radius: 42%;
+	align-items: center;
+	justify-content: center;
+	background-color: transparent;
+	color: #4C57FC;
+}
