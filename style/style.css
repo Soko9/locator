@@ -120,15 +120,16 @@ body {
 }
 
 .store-container:hover {
-	transform: scale(1.15);
-	transition: all 700ms ease-out;
-	/*border-bottom: none;*/
-	/*border: 4px dotted #4C57FC;*/
-	/*border-radius: 15px;*/
-	/*margin-top: -2px;*/
+	/*transform: scale(1.15);*/
+	transition: all 500ms ease-out;
+	border-bottom: none;
+	/*border: 4px dotted white;*/
+	background: linear-gradient(to right, #4C57FC 0%, #BF27FC 100%);
+	/*border-radius: 10px;*/
+	/*margin-top: -3px;*/
 }
 
-/*.store-container:hover .store-address {
+.store-container:hover .store-address {
 	color: white;
 }
 
@@ -140,7 +141,7 @@ body {
 	background-color: #4C57FC;
 	color: white;
 	border: 2px dotted white;
-}*/
+}
 
 .store-container-background {
 	display: flex;
